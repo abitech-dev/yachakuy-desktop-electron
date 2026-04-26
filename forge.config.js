@@ -12,7 +12,9 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {
         // Config instalador .exe de Windows
-        setupIcon: './public/icon.ico' // <--- Ícono del instalador
+        setupIcon: './public/icon.ico', // <--- Ícono del instalador
+        createDesktopShortcut: true,  // <-- Icono en el escritorio
+        createMenuShortcut: true      // <-- Icono en el menú Inicio
       },
     },
     {
@@ -23,7 +25,9 @@ module.exports = {
       name: '@electron-forge/maker-deb',
       config: {
         // Config instalador .deb de Linux
-        icon: './public/icon.png' // <--- Ícono del instalador
+        icon: './public/icon.png', // <--- Ícono del instalador
+        createDesktopShortcut: true,  // <-- Icono en el escritorio
+        createMenuShortcut: true      // <-- Icono en el menú Inicio
       },
     },
     {

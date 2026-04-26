@@ -1,10 +1,15 @@
-const { app, BrowserWindow, screen } = require('electron');
+const { app, BrowserWindow, screen, shell } = require('electron');
 const path = require('path');
+
+// Crear accesos directos
+if (require('electron-squirrel-startup')) {
+    app.quit();
+}
 
 // ==========================================
 // CONFIGURACIÓN PRINCIPAL
 // ==========================================
-const APP_URL = 'https://example.com';  // Cambia a tu URL deseada
+const APP_URL = 'https://yachacuy.com';  // Cambia a tu URL deseada
 const IS_FULLSCREEN = false; // Cambia a true para modo kiosko/videojuego
 
 function createWindow() {
@@ -34,6 +39,14 @@ function createWindow() {
     win.once('ready-to-show', () => {
         win.maximize(); // Maximiza respetando la barra de tareas
         win.show();    // Muestra la ventana solo cuando el contenido ya cargó
+    });
+
+    // ==========================================
+    // CONTROL DE ENLACES EXTERNOS (_blank)
+    // ==========================================
+    win.webContents.setWindowOpenHandler(({ url }) => {
+        shell.openExternal(url); // Abre la URL en el navegador predeterminado
+        return { action: 'deny' }; // Bloquea no abrir ventana interna
     });
 
     // Opcional: Abrir DevTools solo en desarrollo

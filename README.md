@@ -1,12 +1,12 @@
-# 🖥️ [PROYECTO] · Desktop Application
+# 🖥️ Yachakuy · Desktop Application
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D22.0.0-brightgreen)](https://nodejs.org/)
 [![Electron](https://img.shields.io/badge/framework-Electron-blue)](https://www.electronjs.org/)
-[![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen.svg)](https://github.com/[usuario]/[proyecto])
+[![Maintenance](https://img.shields.io/badge/maintained-yes-brightgreen.svg)](https://github.com/abitech-dev/yachakuy-desktop-electron.git)
 
 > **🗂️ Navegación:** **[Ir a la GUÍA TECNICA](./CONFIG.md)**
 
-Contenedor nativo de escritorio para la plataforma **[Nombre del Proyecto]**. Este software actúa como un *Dedicated Web Wrapper* optimizado, proporcionando una experiencia de usuario aislada, segura y de alto rendimiento fuera del navegador convencional.
+Contenedor nativo de escritorio para la plataforma **Yachakuy**. Este software actúa como un *Dedicated Web Wrapper* optimizado, proporcionando una experiencia de usuario aislada, segura y de alto rendimiento fuera del navegador convencional.
 
 ---
 
@@ -35,8 +35,8 @@ Siga estos pasos para levantar el entorno de pruebas local:
 
 1. **Clonación y Dependencias:**
    ```bash
-   git clone https://github.com/[usuario]/[proyecto]-desktop-electron.git
-   cd [proyecto]-desktop-electron
+   git clone https://github.com/abitech-dev/yachakuy-desktop-electron.git
+   cd yachakuy-desktop-electron
    npm install
    ```
 
@@ -74,9 +74,9 @@ La integridad de la aplicación es prioridad. Este contenedor implementa las sig
 
 ## 👨‍💻 Autoría
 
-* **Desarrollador:** Abimael Fernandez / ABItech PERU
-* **Soporte:** [peruabitech@gmail.com]
-* **Website:** [https://abitech.com.pe]
+* **Desarrollador:** Abimael Fernández / ABItech PERU
+* **Soporte:** peruabitech@gmail.com
+* **Website:** https://abitech.com.pe
 
 ---
 © 2026 **ABItech PERU**. Todos los derechos reservados.

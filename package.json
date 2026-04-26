@@ -1,7 +1,8 @@
 {
-  "name": "template-desktop-electron",
+  "name": "yachakuy-desktop-electron",
+  "productName": "Yachakuy",
   "version": "1.0.0",
-  "description": "Plantilla base de Electron puro para Web Wrappers.",
+  "description": "Aplicación de escritorio Yachakuy Perú.",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
